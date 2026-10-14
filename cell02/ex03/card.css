@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    margin: 0 0 24px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 368px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card-img img {
+    display: block;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    padding: 30px 20px;
+}
+
+.card-content h2 {
+    margin: 0 0 26px;
+    font-size: 36px;
+}
+
+.card-content p {
+    margin: 0 0 24px;
+    font-size: 20px;
+}
+
+.card-content .card-profile-desc {
+    color: #888;
+    font-size: 22px;
+}
+
+.card-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.card-social img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.contact-button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font: inherit;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #333;
+}
+
+.contact-button:focus-visible {
+    outline: 3px solid #497bdb;
+    outline-offset: 3px;
+}
