@@ -13,6 +13,10 @@ body {
 }
 
 .bg-button {
-    margin: 20px;
+    margin: 30px;
     padding: 10px 20px;
+    scale: 1;
+    position: fixed;
+    top: 10;
+    left: 10;
 }
