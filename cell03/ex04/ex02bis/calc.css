@@ -1,0 +1,40 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+input,
+select {
+    padding: 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+    font: inherit;
+}
+
+input[type="text"] {
+    width: 8rem;
+}
+
+input[type="submit"] {
+    background: #222;
+    color: white;
+    cursor: pointer;
+}

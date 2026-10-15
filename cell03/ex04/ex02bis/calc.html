@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>It's over 9000!</title>
+        <link rel="stylesheet" href="calc.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+        <script src="calc.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>Calculator</h1>
+            <form id="calculator">
+                <input
+                    type="text"
+                    id="left"
+                    aria-label="Left number"
+                    inputmode="numeric"
+                    placeholder="0"
+                />
+                <select id="operator" aria-label="Operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                <input
+                    type="text"
+                    id="right"
+                    aria-label="Right number"
+                    inputmode="numeric"
+                    placeholder="0"
+                />
+                <input type="submit" value="Try me!" />
+            </form>
+        </main>
+    </body>
+</html>
