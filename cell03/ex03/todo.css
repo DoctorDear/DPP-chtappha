@@ -1,0 +1,19 @@
+body {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#ft_list > div {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid gray;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
