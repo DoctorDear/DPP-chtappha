@@ -16,6 +16,7 @@
         <script src="js/search.js" defer></script>
 
         <link rel="stylesheet" href="css/footer.css">
+        <script src="js/nav.js" defer></script>
     </head>
 
     <body id="top">
@@ -29,7 +30,8 @@
                             <a href="index.html" aria-label="กลับหน้าหลัก First Cup"><img src="./assets/logo.png" alt="First Cup แก้วแรก" id="clickable-logo"></a>
                         </div>
                     </div>
-                    <ul class="menu">
+                    <button class="nav-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="เปิดเมนู"><span aria-hidden="true">☰</span></button>
+                    <ul class="menu" id="site-menu">
                         <li><a href="index.html">หน้าแรก</a></li>
                         <li><a href="about.html">เกี่ยวกับเรา</a></li>
                         <li><a href="menu.html">เมนูกาแฟ</a></li>
