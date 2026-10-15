@@ -1,0 +1,41 @@
+.menu-guide {
+    padding: 3rem 2rem;
+}
+
+.menu-posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.menu-posts .blog-post {
+    scroll-margin-top: 1rem;
+}
+
+.menu-posts h3 {
+    margin-top: 1rem;
+    color: var(--red);
+    font-size: 1rem;
+}
+
+.menu-posts .blog-post p {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.menu-back {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .menu-guide {
+        padding: 2rem 1rem;
+    }
+
+    .menu-guide .blog-title h1 {
+        font-size: 2rem;
+    }
+
+    .menu-posts {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

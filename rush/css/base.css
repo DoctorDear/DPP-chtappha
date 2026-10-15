@@ -1,0 +1,158 @@
+:root {
+    --red: #604330;
+    --black: #30261f;
+    --white: #fff8ee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Kanit", Tahoma, sans-serif;
+}
+
+/*----- Nav Section -----*/
+
+nav {
+    background-color: var(--red);
+    height: 100px;
+    color: var(--white);
+    border-top: 15px solid var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+html,
+body {
+    overflow-x: clip;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    margin: 2rem;
+}
+
+.nav-logo1 img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+}
+
+ul.menu li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+/*----- Nav-menu hover Section -----*/
+
+ul.menu li:after {
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(to right, #956c49, #c59d73);
+    bottom: -10px;
+    left: 0;
+    transition: 0.3s;
+}
+
+ul.menu li:hover::after {
+    width: 100%;
+}
+
+/*----- Nav-menu hover Section -----*/
+
+ul.menu li a {
+    color: var(--white);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+ul.menu li a:focus-visible,
+.nav-logo1 a:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 700px) {
+    nav {
+        height: auto;
+    }
+
+    html {
+        scroll-padding-top: 127px;
+    }
+
+    .nav-con {
+        height: auto;
+        min-height: 112px;
+        padding: 0.5rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .nav-logo {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .nav-logo1 img {
+        display: block;
+        width: 64px;
+        margin: 0;
+    }
+
+    ul.menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 0.75rem;
+    }
+
+    ul.menu li {
+        margin: 0;
+    }
+
+    ul.menu li a {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        font-size: 0.875rem;
+    }
+
+    ul.menu li::after {
+        bottom: 0;
+        height: 2px;
+    }
+}
+
+/*----- Nav Section -----*/
+
+
+body,
+input,
+button {
+    font-family: "Kanit", Tahoma, sans-serif;
+}

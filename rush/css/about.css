@@ -1,0 +1,81 @@
+.about {
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.about-title {
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.about-title h1 {
+    margin-bottom: 1rem;
+    color: var(--red);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-title p {
+    line-height: 1.8;
+}
+
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 368px));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-container {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(48, 38, 31, 0.2);
+}
+
+.card-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 275px;
+    background-color: var(--red);
+    padding: 1rem 1rem 0;
+}
+
+.card-content {
+    padding: 30px 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+}
+
+.card-content p {
+    line-height: 1.8;
+}
+
+.card-profile-desc {
+    margin-bottom: 0.5rem;
+    color: var(--red);
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .team-cards {
+        grid-template-columns: minmax(0, 368px);
+    }
+}

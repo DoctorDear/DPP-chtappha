@@ -1,0 +1,38 @@
+const coffeeMenus = [
+    {
+        id: "latte",
+        names: ["latte", "ลาเต้", "ลาเต่"],
+        name: "ลาเต้ Latte",
+        description: "เอสเปรสโซผสมนม รสนุ่มและดื่มง่าย เหมาะกับคนที่อยากเริ่มจากกาแฟใส่นม",
+        order: "ขอลาเต้เย็น 1 แก้ว หวานน้อย",
+        image: "https://images.unsplash.com/photo-1769138886383-e0aabad94205?auto=format&fit=crop&fm=jpg&q=80&w=900",
+        alt: "ลาเต้พร้อมลายลาเต้อาร์ต",
+    },
+    {
+        id: "americano",
+        names: ["americano", "อเมริกาโน", "อเมริกาโน่"],
+        name: "อเมริกาโน Americano",
+        description: "เอสเปรสโซผสมน้ำ ไม่มีนม รสกาแฟชัดขึ้น ถ้าไม่แน่ใจเรื่องความเข้มลองเริ่มจากแก้วเย็นได้",
+        order: "ขออเมริกาโนเย็น 1 แก้ว ไม่เติมน้ำเชื่อม",
+        image: "https://images.unsplash.com/photo-1571040328796-b84632420c3b?auto=format&fit=crop&fm=jpg&q=80&w=900",
+        alt: "กาแฟดำในแก้ว",
+    },
+    {
+        id: "mocha",
+        names: ["mocha", "มอคค่า", "มอคคา", "ม็อคค่า"],
+        name: "มอคค่า Mocha",
+        description: "กาแฟผสมนมและช็อกโกแลต รสหวานหอมคล้ายโกโก้ เหมาะกับคนที่อยากค่อย ๆ ทำความรู้จักรสกาแฟ",
+        order: "ขอมอคค่าเย็น 1 แก้ว หวานน้อย",
+        image: "https://images.unsplash.com/photo-1533651441215-d01c13c8c4ad?auto=format&fit=crop&fm=jpg&q=80&w=900",
+        alt: "มอคค่าช็อกโกแลตในแก้วใส",
+    },
+    {
+        id: "cappuccino",
+        names: ["cappuccino", "คาปูชิโน", "คาปูชิโน่"],
+        name: "คาปูชิโน Cappuccino",
+        description: "เอสเปรสโซผสมนมและฟองนมนุ่ม ๆ กลิ่นกาแฟจะชัดกว่าลาเต้เล็กน้อย",
+        order: "ขอคาปูชิโนร้อน 1 แก้ว หวานน้อย",
+        image: "https://images.unsplash.com/photo-1564327367919-cb377ea6a88f?auto=format&fit=crop&fm=jpg&q=80&w=900",
+        alt: "คาปูชิโนในถ้วยพร้อมฟองนม",
+    },
+];

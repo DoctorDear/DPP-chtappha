@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>First Cup</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="js/coffee-data.js" defer></script>
+        <script src="js/coffee.js" defer></script>
+        <script src="js/search.js" defer></script>
+
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+    <body id="top">
+
+        <!-- Nav Section -->
+        <nav>
+            <div class="container">
+                <div class="nav-con">
+                    <div class="nav-logo">
+                        <div class="nav-logo1">
+                            <a href="index.html" aria-label="กลับหน้าหลัก First Cup"><img src="./assets/logo.png" alt="First Cup แก้วแรก" id="clickable-logo"></a>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="menu.html">เมนูกาแฟ</a></li>
+                        <li><a href="index.html#contact">ข้อมูลเพิ่มเติม</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Section -->
+
+        <!-- banner Section -->
+        <section class="banner" aria-labelledby="hero-title">
+            <div class="banner-info">
+                <div class="banner-logo">
+                    <img src="assets/logo.png" alt="First Cup แก้วแรก" width="2000" height="2000" fetchpriority="high">
+                </div>
+                <h1 id="hero-title">กาแฟแก้วแรก เริ่มจากอะไรดี?</h1>
+                <p class="banner-description">เข้าคาเฟ่แล้วไม่รู้จะสั่งอะไร?<br>มารู้จักเมนูกาแฟ แล้วเลือกแก้วที่เหมาะกับคุณ</p>
+                <a href="#food" class="banner-btn">เริ่มรู้จักกาแฟ</a>
+            </div>
+        </section>
+        <!-- banner Section -->
+
+        <!-- blog Section -->
+        <section class="blog" id="food">
+            <div class="container">
+                <div class="blog-con">
+                    <div class="blog-title">
+                        <h1>รู้จักกาแฟแก้วแรก</h1>
+                        <p>ชื่อเมนูต่างกันยังไง? ลองเริ่มจากสามเมนูที่เจอบ่อย แล้วเลือกจากรสชาติที่อยากลอง</p>
+                    </div>
+                    <div class="blog-posts">
+                        <div class="blog-post">
+                            <img src="https://images.unsplash.com/photo-1769138886383-e0aabad94205?auto=format&fit=crop&fm=jpg&q=80&w=900"
+                            alt="กาแฟลาเต้พร้อมลายลาเต้อาร์ต">
+                            <h2>ลาเต้ <span>Latte</span></h2>
+                            <p>เอสเปรสโซผสมนม รสนุ่ม มีฟองนมบาง ๆ เหมาะกับคนที่อยากเริ่มจากกาแฟใส่นม</p>
+                            <a href="#order" class="blog-post-btn">ช่วยเลือกเมนู</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="https://images.unsplash.com/photo-1571040328796-b84632420c3b?auto=format&fit=crop&fm=jpg&q=80&w=900"
+                            alt="กาแฟดำในถ้วย">
+                            <h2>อเมริกาโน <span>Americano</span></h2>
+                            <p>เอสเปรสโซผสมน้ำ ไม่มีนม รสกาแฟชัดขึ้น ลองถามบาริสต้าเรื่องเมล็ดและรสชาติได้</p>
+                            <a href="#order" class="blog-post-btn">ช่วยเลือกเมนู</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="https://images.unsplash.com/photo-1533651441215-d01c13c8c4ad?auto=format&fit=crop&fm=jpg&q=80&w=900"
+                            alt="มอคค่ากาแฟช็อกโกแลตเสิร์ฟในแก้วใส">
+                            <h2>มอคค่า <span>Mocha</span></h2>
+                            <p>กาแฟผสมช็อกโกแลตและนม เหมาะกับคนที่ชอบโกโก้และอยากลองรสกาแฟด้วย</p>
+                            <a href="#order" class="blog-post-btn">ช่วยเลือกเมนู</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog Section -->
+
+        <!-- CTA Section -->
+        <section class="cta" id="order">
+            <div class="container">
+                <div class="cta-con">
+                    <div class="cta-clip">
+                        <article class="coffee-result" id="coffee-result" aria-live="polite" aria-atomic="true">
+                            <div class="coffee-result-image">
+                                <img id="coffee-image"
+                                src="https://images.unsplash.com/photo-1769138886383-e0aabad94205?auto=format&fit=crop&fm=jpg&q=80&w=900"
+                                alt="ตัวอย่างกาแฟลาเต้สำหรับเมนูสุ่ม" loading="lazy">
+                            </div>
+                            <div class="coffee-result-info">
+                                <p class="coffee-result-label">เมนูที่อาจได้วันนี้</p>
+                                <h2 id="coffee-name">วันนี้ลองอะไรดี?</h2>
+                                <p id="coffee-description">กดปุ่มสุ่ม แล้วมาทำความรู้จักกาแฟแก้วใหม่กัน</p>
+                                <p class="coffee-order" id="coffee-order-container" hidden>
+                                    <strong>ลองสั่งแบบนี้</strong>
+                                    <span id="coffee-order"></span>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cta-title">
+                        <p class="cta-kicker">FIRST CUP · COFFEE PICKER</p>
+                        <h1>วันนี้ดื่มกาแฟอะไรดี?</h1>
+                        <p>ถ้ายังเลือกไม่ถูก ให้แก้วแรกช่วยสุ่มเมนู พร้อมบอกคร่าว ๆ ว่ารสชาติเป็นแบบไหนและจะเริ่มสั่งอย่างไร</p>
+                        <button class="coffee-random-button" id="coffee-random-button" type="button" aria-controls="coffee-result">
+                            <i class="bi bi-shuffle" aria-hidden="true"></i>
+                            <span>สุ่มเมนูกาแฟ</span>
+                        </button>
+                        <p class="cta-hint">สุ่มจากเมนูที่เหมาะกับคนเพิ่งเริ่มดื่มกาแฟ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+
+        <!-- Preferences Section -->
+        <section class="preferences" id="shop">
+            <div class="container">
+                <div class="preferences-con">
+                    <div class="preferences-title">
+                        <h1>อยากเลือกเองไหม? เริ่มจากรสที่ชอบ</h1>
+                        <p>เลือกแนวที่ชอบก่อน ไม่ต้องจำชื่อทุกเมนู สูตรและขนาดแก้วของแต่ละร้านอาจต่างกัน</p>
+                        <div class="preferences-box">
+                            <div class="preferences-info">
+                                <h1>นุ่ม</h1>
+                                <h2>ชอบนม</h2>
+                                <p>อยากเริ่มจากรสนม ลองลาเต้ แล้วบอกระดับความหวานที่ต้องการตอนสั่ง</p>
+                                <a href="menu.html#latte" class="preferences-btn">ดูเมนูลาเต้</a>
+                            </div>
+                            <div class="preferences-info">
+                                <h1>หวาน</h1>
+                                <h2>ชอบช็อกโกแลต</h2>
+                                <p>ชอบช็อกโกแลต ลองมอคค่า ถ้าไม่อยากหวานมาก ให้ถามทางร้านเรื่องการลดไซรัป</p>
+                                <a href="menu.html#mocha" class="preferences-btn">ดูเมนูมอคค่า</a>
+                            </div>
+                            <div class="preferences-info">
+                                <h1>ชัด</h1>
+                                <h2>ชอบกาแฟดำ</h2>
+                                <p>อยากลองกาแฟแบบไม่ใส่นม ดูอเมริกาโน แล้วถามทางร้านเรื่องรสชาติของเมล็ดได้เลย</p>
+                                <a href="menu.html#americano" class="preferences-btn">ดูอเมริกาโน</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Preferences Section -->
+
+        <!-- Search Section -->
+        <section class="search">
+            <div class="container">
+                <div class="search-con">
+                    <div class="search-title">
+                        <h3>มีชื่อเมนูในใจแล้ว?</h3>
+                        <p>ลองพิมพ์ชื่อไทยหรืออังกฤษ เช่น ลาเต้ หรือ Latte</p>
+                        <form class="search-input" id="coffee-search" action="menu.html" method="get" role="search">
+                            <input type="search" id="search-query" name="q" class="search-text" aria-label="ชื่อเมนูกาแฟ" aria-describedby="search-feedback" placeholder="เช่น ลาเต้ หรือ Latte">
+                            <button type="submit" class="search-submit" aria-label="ค้นหาเมนูกาแฟ"><i class="bi bi-search" aria-hidden="true"></i></button>
+                        </form>
+                        <div class="search-feedback" id="search-feedback" role="status">
+                            <span id="search-message"></span>
+                            <a href="menu.html" id="search-all" hidden>ดูเมนูทั้งหมด</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Search Section -->
+
+        <!-- Footer Section -->
+        <footer id="contact">
+            <div class="container footer-con">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html" aria-label="กลับหน้าแรก แก้วแรก">
+                        <img src="assets/logo.png" alt="First Cup แก้วแรก" width="2000" height="2000" loading="lazy">
+                    </a>
+                    <p>คู่มือกาแฟแก้วแรก สำหรับคนที่ยังไม่รู้จะสั่งอะไร</p>
+                </div>
+                <ul class="footer-links" aria-label="ลิงก์ท้ายหน้า">
+                    <li><a href="menu.html">เมนูกาแฟ</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="#top">กลับด้านบน</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer Section -->
+
+    </body>
+</html>
